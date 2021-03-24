@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+p {
+  padding: 20px 0px 0px;
+  margin: 0px;
+}
+
+.quote {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+}
+.all_content {
+  width: 550px;
+  height: 550px;
+  background-color: #0d5825;
+}
+
+.card1 {
+  width: 150px;
+  z-index: 1;
+  transform: translate(140px, 90px) rotate(-25deg);
+  transition: ease 0.5s;
+}
+.card1:hover {
+  transform: translate(130px, 80px) rotate(-25deg);
+}
+.card2 {
+  width: 150px;
+  z-index: 2;
+  transform: translate(30px, 95px) rotate(-10deg);
+  transition: ease 0.5s;
+}
+.card2:hover {
+  transform: translate(20px, 85px) rotate(-10deg);
+}
+.card3 {
+  width: 150px;
+  z-index: 3;
+  transform: translate(-80px, 110px) rotate(5deg);
+  transition: ease 0.5s;
+}
+.card3:hover {
+  transform: translate(-75px, 100px) rotate(5deg);
+}
+
+.squares {
+  margin: 100px 50px;
+}
+.square1 {
+  width: 60px;
+  height: 60px;
+  background-color: #ff8889;
+}
+.square2 {
+  width: 60px;
+  height: 60px;
+  background-color: #7d89eb;
+  position: relative;
+  right: -35px;
+  top: -25px;
+  z-index: 1;
+}
+.square3 {
+  width: 60px;
+  height: 60px;
+  background-color: #4def99;
+  position: relative;
+  right: -70px;
+  top: -50px;
+}

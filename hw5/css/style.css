@@ -1,0 +1,141 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3b714;
+  padding: 10px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+}
+.menu > li {
+  padding: 5px;
+}
+
+.img {
+  padding: 15px;
+}
+.main {
+  display: flex;
+  flex: 1 0 auto;
+}
+.main_content {
+  padding: 10px;
+  text-align: center;
+}
+.aside1 {
+  background-color: #c798b9;
+  width: 210px;
+  order: -1;
+  text-align: center;
+  flex-shrink: 0;
+}
+.aside2 {
+  background-color: #9cb1c7;
+  text-align: center;
+  flex-shrink: 0;
+  width: 210px;
+}
+.footer {
+  flex: 0 0 auto;
+  text-align: center;
+  background-color: #86ec86;
+  padding: 10px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.product_card {
+  width: calc(33.333% - 20px);
+  text-align: center;
+  border: 1px solid #685174;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  display: block;
+  text-decoration: none;
+  background: #685174;
+  color: white;
+  border-radius: 20px;
+  width: 35px;
+  transition: ease 0.2s;
+  margin: auto auto 10px;
+}
+.button:hover {
+  background: black;
+}
+
+.img {
+  border-radius: 50%;
+  border: 8px #c7b7b7 solid;
+  padding: 0;
+  margin: 10px;
+  width: 100px;
+}
+.img1 {
+  width: 200px;
+}
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  margin: 0 auto;
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.holder .item {
+  flex-grow: 1;
+  line-height: 50px;
+}
+.item:nth-child(1) {
+  width: 50%;
+  background-color: tomato;
+  order: -3;
+  border-top-left-radius: 17px;
+}
+.item:nth-child(2) {
+  background-color: blue;
+}
+.item:nth-child(3) {
+  background-color: blueviolet;
+  order: -1;
+}
+.item:nth-child(4) {
+  background-color: green;
+}
+.item:nth-child(5) {
+  width: 50%;
+  background-color: orange;
+  order: -2;
+  border-top-right-radius: 17px;
+}

@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+.menu {
+  background-color: grey;
+  position: relative;
+  width: 200px;
+  transform: translate(-100%, 0);
+  transition: all 0.3s ease;
+  height: 450px;
+  padding: 10px;
+}
+.menu:hover {
+  transform: translate(0, 0);
+}
+.menu:hover:after {
+  opacity: 0;
+}
+.menu::after {
+  content: "MENU HERE";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  left: 100%;
+  background-color: grey;
+  writing-mode: vertical-lr;
+  text-align: center;
+  color: #fff;
+}
+.menu ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu ul li a::before {
+  content: "\01F538";
+}

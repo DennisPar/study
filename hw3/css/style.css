@@ -1,0 +1,28 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.element_what_you_want {
+  width: 350px;
+  height: 220px;
+  padding: 15px 10px 20px;
+  margin: 0px 0px 30px;
+  background-color: green;
+  border: dotted 2px red;
+}
+.lorem_and_img {
+  max-width: 50%;
+  margin: 0;
+  text-align: justify;
+}
+.img1 {
+  float: left;
+  width: 250px;
+  margin: 0px 20px 20px 0px;
+}
+.img2 {
+  float: right;
+  width: 200px;
+  margin: 20px 0px 20px 20px;
+}

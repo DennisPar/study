@@ -1,0 +1,28 @@
+.blockquote {
+  color: green;
+}
+.list li a[href^="https://"]
+{
+  color: red;
+}
+.list > li:last-child * {
+  background-color: green;
+}
+.list + p {
+  font-size: 26px;
+}
+.text-box :first-child {
+  color: pink;
+}
+#greycol {
+  color: grey;
+}
+.text-box div :nth-of-type(1) {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.text-box p:nth-child(7) {
+  color: green;
+}
